@@ -135,6 +135,7 @@ int insecure_links = 0;
 int munge_symlinks = 0;
 int use_secure_symlinks = 0;
 int size_only = 0;
+int time_only = 0;
 int daemon_bwlimit = 0;
 int bwlimit = 0;
 int fuzzy_basis = 0;
@@ -714,6 +715,7 @@ static struct poptOption long_options[] = {
   {"chmod",            0,  POPT_ARG_STRING, 0, OPT_CHMOD, 0, 0 },
   {"ignore-times",    'I', POPT_ARG_NONE,   &ignore_times, 0, 0, 0 },
   {"size-only",        0,  POPT_ARG_NONE,   &size_only, 0, 0, 0 },
+  {"time-only",        0,  POPT_ARG_NONE,   &time_only, 0, 0, 0 },
   {"one-file-system", 'x', POPT_ARG_NONE,   0, 'x', 0, 0 },
   {"no-one-file-system",0, POPT_ARG_VAL,    &one_file_system, 0, 0, 0 },
   {"no-x",             0,  POPT_ARG_VAL,    &one_file_system, 0, 0, 0 },
